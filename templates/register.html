@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GridOS: Register</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="align-items: center; justify-content: center;">
+
+  <div class="retro-window" style="width: 100%; max-width: 360px;">
+    <div class="window-header yellow">
+      <span>New_User_Setup.exe</span>
+      <div class="window-controls">_ □ ✕</div>
+    </div>
+    <div class="window-body">
+      <div style="text-align: center; margin-bottom: 16px;">
+        <h2 class="pixel-font" style="font-size: 28px; margin: 0;">Create Account</h2>
+      </div>
+
+      {% if error %}
+        <div style="background: var(--retro-pink); border: 2px solid var(--border-color); padding: 6px; font-size: 12px; margin-bottom: 12px; font-weight: bold; text-align: center;">
+          {{ error }}
+        </div>
+      {% endif %}
+
+      <form action="{{ url_for('register') }}" method="POST">
+        <div class="retro-field">
+          <label>Username</label>
+          <input type="text" name="username" class="retro-input" required>
+        </div>
+        <div class="retro-field">
+          <label>Email Address</label>
+          <input type="email" name="email" class="retro-input" placeholder="student@university.edu" required>
+        </div>
+        <div class="retro-field">
+          <label>Password</label>
+          <input type="password" name="password" class="retro-input" required>
+        </div>
+        <button type="submit" class="retro-btn yellow retro-btn-block" style="margin-top: 8px;">[ CREATE ACCOUNT ]</button>
+      </form>
+
+      <div style="margin-top: 16px; text-align: center; font-size: 12px;">
+        <a href="{{ url_for('login') }}">← Back to Login</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

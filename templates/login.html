@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GridOS: Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="align-items: center; justify-content: center;">
+
+  <div class="retro-window" style="width: 100%; max-width: 360px;">
+    <div class="window-header teal">
+      <span>GridOS_Auth.exe</span>
+      <div class="window-controls">_ □ ✕</div>
+    </div>
+    <div class="window-body">
+      <div style="text-align: center; margin-bottom: 16px;">
+        <h2 class="pixel-font" style="font-size: 32px; margin: 0;">GridOS</h2>
+        <small>Autonomous Life & Academic Engine</small>
+      </div>
+
+      {% if error %}
+        <div style="background: var(--retro-pink); border: 2px solid var(--border-color); padding: 6px; font-size: 12px; margin-bottom: 12px; font-weight: bold; text-align: center;">
+          {{ error }}
+        </div>
+      {% endif %}
+
+      <form action="{{ url_for('login') }}" method="POST">
+        <div class="retro-field">
+          <label>Username</label>
+          <input type="text" name="username" class="retro-input" required>
+        </div>
+        <div class="retro-field">
+          <label>Password</label>
+          <input type="password" name="password" class="retro-input" required>
+        </div>
+        <button type="submit" class="retro-btn teal retro-btn-block" style="margin-top: 8px;">[ OK / SIGN IN ]</button>
+      </form>
+
+      <div style="display: flex; justify-content: space-between; margin-top: 16px; font-size: 12px;">
+        <a href="{{ url_for('forgot_password') }}" style="color: var(--retro-orange); font-weight: bold;">Forgot Password?</a>
+        <a href="{{ url_for('register') }}" style="font-weight: bold;">Register</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

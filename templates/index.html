@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GridOS — Workspace</title>
+  <title>Grid — Workspace</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -11,7 +11,7 @@
   <header class="retro-taskbar">
     <div class="brand-badge">
       <div class="brand-icon">★</div>
-      <span>GridOS / <span style="color: var(--retro-orange);">{{ username }}</span></span>
+      <span>grid / <span style="color: var(--retro-orange);">{{ username }}</span></span>
     </div>
     <div style="display: flex; gap: 8px;">
       <a href="{{ url_for('undo') }}" class="retro-btn">[ ↶ UNDO ]</a>

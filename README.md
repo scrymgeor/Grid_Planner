@@ -1,5 +1,5 @@
 # ⚡ Grid — Autonomous Academic & Life Scheduling Engine
-> **Semester 3 IT Workshop (Python) Project**  
+> **Semester 3 IT Workshop III (Python) Project**  
 > *A heuristic-driven, retro-inspired autonomous scheduling engine built with pure Python, Flask, SQLite3, and Matplotlib.*
 
 ---
@@ -10,7 +10,7 @@
 
 ---
 
-## 📖 What is Grid?
+## 📖 What is GRID?
 Traditional calendars are passive—you still have to figure out *when* to study. **Grid** automates time management:
 1. You set your weekly free hours and input tasks with deadlines and priorities.
 2. Our **Greedy Heuristic Algorithm** calculates dynamic task urgency:
@@ -19,9 +19,9 @@ Traditional calendars are passive—you still have to figure out *when* to study
 
 ---
 
-## ✨ Features
+##  Features
 - **Heuristic Auto-Scheduler:** Computes dynamic urgency and auto-allocates study blocks.
-- **90s Lo-Fi Retro Desktop UI:** Nostalgic pastel grid paper and windowed aesthetic.
+- **Retro UI:** Nostalgic pastel grid paper and windowed aesthetic.
 - **Full Relational CRUD:** Multi-user SQLite3 database with SHA-256 password hashing.
 - **Network Services (SMTP):** Welcome emails on signup and 6-digit OTP verification for password resets.
 - **Habit & Streak Tracker:** Daily habit checklist with active streak counters.
@@ -37,7 +37,9 @@ Traditional calendars are passive—you still have to figure out *when* to study
 - **Networking:** Client-server email dispatching using Python's native `smtplib`.
 - **Concurrency:** Background `threading.Thread` daemon monitoring deadlines.
 - **File Processing:** CSV parsing (`csv.DictReader`, `csv.writer`) and text append logging (`system_activity.log`).
-
+-Grid integrates production-grade email services using Python's native `smtplib` and `email.mime` over authenticated TLS/SSL ports:
+  **Automated Onboarding:** Sends an official **Welcome Email** immediately upon user registration.
+  **Secure Password Recovery:** Generates and dispatches a dynamic **6-digit verification OTP** when a user clicks *"Forgot Password"*.
 ---
 
 ## 🚀 Quickstart & Setup

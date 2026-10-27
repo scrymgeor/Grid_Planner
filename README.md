@@ -30,7 +30,7 @@ Traditional calendars are passive—you still have to figure out *when* to study
 
 ---
 
-## 📚 Core Syllabus Mapping
+## Implementation
 - **OOP & Polymorphism:** `Task` base class overridden by `AcademicTask`, `FitnessHabitTask`, and `WorkProjectTask`.
 - **Database Processing:** SQLite3 relational schema (`users`, `tasks`, `free_slots`, `schedule`, `habits`).
 - **Data Structures:** Custom `ActionStack` class with `.push()` and `.pop()`.

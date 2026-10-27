@@ -1,5 +1,4 @@
 # ⚡ Grid — Autonomous Academic & Life Scheduling Engine
-> **Semester 3 IT Workshop III (Python) Project**  
 > *A heuristic-driven, retro-inspired autonomous scheduling engine built with pure Python, Flask, SQLite3, and Matplotlib.*
 
 ---
@@ -55,6 +54,7 @@ pip install -r requirements.txt
 # 3. Run the application
 python app.py
 Open http://127.0.0.1:5000 in your browser.
-👨‍💻 Author
+
+
 Student Name: Keerthana A E
 Course: IT Workshop III

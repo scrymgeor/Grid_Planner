@@ -1,4 +1,4 @@
-# ⚡ Grid — Autonomous Academic & Life Scheduling Engine
+# GRID — Autonomous Academic & Life Scheduling Engine
 > **Semester 3 IT Workshop (Python) Project**  
 > *A heuristic-driven, retro-inspired autonomous scheduling engine built with pure Python, Flask, SQLite3, and Matplotlib.*
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📖 What is Grid?
+## What is Grid?
 Traditional calendars are passive—you still have to figure out *when* to study. **Grid** automates time management:
 1. You set your weekly free hours and input tasks with deadlines and priorities.
 2. A **Greedy Heuristic Algorithm** calculates dynamic task urgency:
@@ -19,7 +19,7 @@ Traditional calendars are passive—you still have to figure out *when* to study
 
 ---
 
-## ✨ Features
+## Features
 - **Heuristic Auto-Scheduler:** Computes dynamic urgency and auto-allocates study blocks.
 - **Retro UI:** Nostalgic pastel grid paper and windowed aesthetic.
 - **Full Relational CRUD:** Multi-user SQLite3 database with SHA-256 password hashing.
@@ -37,7 +37,7 @@ Traditional calendars are passive—you still have to figure out *when* to study
 - **Networking:** Client-server email dispatching using Python's native `smtplib`.
 - **Concurrency:** Background `threading.Thread` daemon monitoring deadlines.
 - **File Processing:** CSV parsing (`csv.DictReader`, `csv.writer`) and text append logging (`system_activity.log`).
-
+- **SMTP:** Grid integrates production-grade email services using Python's native smtplib and email.mime over authenticated TLS/SSL ports
 ---
 
 ## Quickstart & Setup
@@ -53,6 +53,3 @@ pip install -r requirements.txt
 # 3. Run the application
 python app.py
 Open http://127.0.0.1:5000 in your browser.
-👨‍💻 Author
-Student Name: Keerthana A E
-Course: IT Workshop III

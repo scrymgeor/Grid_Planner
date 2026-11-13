@@ -45,7 +45,7 @@ Traditional calendars are passive—you still have to figure out *when* to study
 ```bash
 # 1. Clone the repository
 git clone https://github.com/scrymgeor/Grid_Planner.git
-cd YOUR_REPO_NAME
+cd Grid_Planner
 
 # 2. Install dependencies
 pip install -r requirements.txt
